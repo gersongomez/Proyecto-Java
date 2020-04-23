@@ -166,7 +166,7 @@ private static Connection con;
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try{
-            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3307/bd_nomina", "root", "");
+            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bd_nomina", "root", "");
             PreparedStatement pst = cn.prepareStatement("insert into tEmpleados values(?,?,?,?,?,?)");
             pst.setString(1, "0");
             pst.setString(2,jTextField2.getText().trim());
